@@ -1,4 +1,4 @@
-CFLAGS=-Wall -g -lm
+CFLAGS=-Wall -g
 
 clean:
 	rm -f MergeSort
