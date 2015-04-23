@@ -18,6 +18,8 @@ int main(void)
 	int unsorted4[1] = {1};
 	int sorted5[6] = {0, 0, 0, 0, 0, 0};
 	int unsorted5[6] = {0, 0, 0, 0, 0, 0};
+	int sorted6[15] = {32, 12, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15};
+	int unsorted6[15] = {32, 12, 3, 4, 8, 10, 14, 5, 9, 6, 11, 15, 13, 7, 12};
 	
 	//sorts the unsorted arrays
 	mergeSort(unsorted1, 1, 5);
@@ -26,6 +28,7 @@ int main(void)
 	mergeSort(test_sorted1, 1, 5);
 	mergeSort(unsorted4, 1, 1);
 	mergeSort(unsorted5, 1,5);
+	mergeSort(unsorted6, 4, 14);
 	
 	//tests that repeating element array wont get messed up
 	assert(sorted5[1] == unsorted5[1]);
@@ -53,6 +56,14 @@ int main(void)
 	assert(sorted2[1] == unsorted3[1]);
 	assert(sorted2[3] == unsorted3[3]);
 	assert(sorted2[2] == unsorted3[2]);
+	
+	//tests when only part of the array is sorted
+	assert(sorted6[6] == unsorted6[6]);
+	assert(sorted6[8] == unsorted6[8]);
+	assert(sorted6[10] == unsorted6[10]);
+	assert(sorted6[4] == unsorted6[4]);
+	assert(sorted6[13] == unsorted6[13]);
+	
 	
 	return 0;
 }

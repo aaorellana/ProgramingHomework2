@@ -1,3 +1,5 @@
-void mergeSort(int *array, int p, int r);
+//merge sort recursive call, divides the problem into sub problems
+void mergeSort(int *array, int begining, int end);
 
-void merge(int *array, int p, int q, int r);
+//combines all the sub arrays
+void merge(int *array, int begining, int middle, int end);
