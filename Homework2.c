@@ -34,6 +34,5 @@ int main(int argc, char *argv[])
 	}
 	puts("\n");
 	
-	
 	return 0;
 }

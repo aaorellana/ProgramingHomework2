@@ -64,6 +64,5 @@ int main(void)
 	assert(sorted6[4] == unsorted6[4]);
 	assert(sorted6[13] == unsorted6[13]);
 	
-	
 	return 0;
 }
